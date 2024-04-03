@@ -1,0 +1,39 @@
+.mapContainer {
+  min-height: 100%;
+  width: 100%;
+  background: var(--accent_color);
+  position: relative;
+}
+
+.enterCountryForm {
+  border: none;
+  outline: none;
+  margin: 0 8px 8px 8px;
+}
+
+.enterCountryForm button {
+  align-self: flex-start;
+  margin: 8px;
+  margin-left: 0;
+}
+
+.mapContainer header {
+  position: relative;
+}
+
+.map:hover{
+  cursor: pointer;
+}
+
+.totalCount {
+  font-family: var(--mainFont);
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 650px) {
+  .totalCount {
+    font-size: 12px;
+  }
+}
