@@ -51,9 +51,9 @@ function Form(props) {
           })
           .catch((error) => {
             // Handle registration errors
+            // Clear username field if user already exists
+            alert("username already exists! Please try another username");
             setUserData((prevValue) => {
-              // Clear username field if user already exists
-              alert("username already exists! Please try another username");
               return {
                 ...prevValue,
                 username: "",
